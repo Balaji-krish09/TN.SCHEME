@@ -2,7 +2,9 @@
   {
     "id": "smart-ration-card",
     "category": "general",
-    "matchWhen": { "need": "Ration card" },
+    "matchWhen": {
+      "need": "Ration card"
+    },
     "name": "TN Smart Ration Card (TNPDS)",
     "department": "Civil Supplies and Consumer Protection Department, Government of Tamil Nadu",
     "official_link": "https://www.tnpds.gov.in",
@@ -26,7 +28,9 @@
   {
     "id": "community-certificate",
     "category": "general",
-    "matchWhen": { "need": "Identity / community certificate" },
+    "matchWhen": {
+      "need": "Identity / community certificate"
+    },
     "name": "Community Certificate (Caste Certificate)",
     "department": "Revenue Department, Government of Tamil Nadu (issued by Tahsildar / Deputy Tahsildar)",
     "official_link": "https://www.tnesevai.tn.gov.in",
@@ -52,7 +56,9 @@
   {
     "id": "old-age-pension",
     "category": "general",
-    "matchWhen": { "need": "Old age pension" },
+    "matchWhen": {
+      "need": "Old age pension"
+    },
     "name": "Old Age Pension (Indira Gandhi National Old Age Pension Scheme – TN)",
     "department": "Department of Social Welfare and Women Empowerment, Government of Tamil Nadu",
     "official_link": "https://www.myscheme.gov.in/schemes/ignoapstn",
@@ -77,7 +83,11 @@
   {
     "id": "cmchis",
     "category": "health",
-    "matchWhen": { "income": ["Below ₹1,20,000 per year"] },
+    "matchWhen": {
+      "income": [
+        "Below ₹1,20,000 per year"
+      ]
+    },
     "name": "Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
     "department": "Health & Family Welfare Department, Government of Tamil Nadu",
     "official_link": "https://www.cmchistn.com/",
@@ -131,7 +141,13 @@
   {
     "id": "micro-irrigation-subsidy",
     "category": "farmer",
-    "matchWhen": { "farmType": ["Crop cultivation", "Horticulture"] },
+    "matchWhen": {
+      "farmType": [
+        "Paddy, millets & other field crops",
+        "Vegetables, fruits & flowers (horticulture)",
+        "Coconut, arecanut & other tree/plantation crops"
+      ]
+    },
     "name": "Micro Irrigation (Drip & Sprinkler) Subsidy",
     "department": "Agricultural Engineering Department / Directorate of Horticulture and Plantation Crops, Government of Tamil Nadu",
     "official_link": "https://aed.tn.gov.in/en/schemes/water-management/pmksy-mimis-swma/",
@@ -158,7 +174,12 @@
   {
     "id": "pmfby-crop-insurance",
     "category": "farmer",
-    "matchWhen": { "farmType": ["Crop cultivation", "Horticulture"] },
+    "matchWhen": {
+      "farmType": [
+        "Paddy, millets & other field crops",
+        "Vegetables, fruits & flowers (horticulture)"
+      ]
+    },
     "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY) — Crop Insurance",
     "department": "Ministry of Agriculture & Farmers Welfare (Government of India), implemented in Tamil Nadu via the Agriculture Department and empanelled insurers",
     "official_link": "https://pmfby.gov.in/",
@@ -166,7 +187,7 @@
     "status": "Active",
     "summary": "Low-cost crop insurance — you pay a small fixed share of the premium, and the government covers the rest, protecting you against crop loss from natural causes.",
     "about": "Insures your crop against yield loss from natural calamities, pests, and diseases. The farmer's premium share is capped by crop type, with the government subsidising the remaining actuarial premium.",
-    "eligibility_text": "Any farmer growing a notified crop in a notified area for that season can enrol — including tenant farmers and sharecroppers, not just landowners. Your premium share is capped at 2% for Kharif crops, 1.5% for Rabi food/oilseed crops, and 5% for commercial/horticultural crops.",
+    "eligibility_text": "Any farmer growing a notified crop in a notified area for that season can enrol — including tenant farmers and sharecroppers, not just landowners. Your premium share is capped at 2% for Kharif crops, 1.5% for Rabi food/oilseed crops, and 5% for commercial/horticultural crops. Note: perennial plantation/tree crops like coconut and arecanut are generally not covered under PMFBY — they have their own dedicated insurance (e.g. the Coconut Palm Insurance Scheme) instead.",
     "documents_required": [
       "Aadhaar card",
       "Land ownership proof or land records",
@@ -208,7 +229,11 @@
   {
     "id": "post-matric-scst",
     "category": "student",
-    "matchWhen": { "community": ["SC / ST"] },
+    "matchWhen": {
+      "community": [
+        "SC / ST"
+      ]
+    },
     "name": "Post-Matric Scholarship for SC/ST Students",
     "department": "Adi Dravidar and Tribal Welfare Department, Government of Tamil Nadu",
     "official_link": "https://www.tntribalwelfare.tn.gov.in/scholarship_matric.php",
@@ -234,7 +259,15 @@
   {
     "id": "pre-matric-bcmbcdnc",
     "category": "student",
-    "matchWhen": { "level": ["School"], "community": ["MBC / DNC", "BC"] },
+    "matchWhen": {
+      "level": [
+        "School"
+      ],
+      "community": [
+        "MBC / DNC",
+        "BC"
+      ]
+    },
     "name": "Pre-Matric Scholarship (BC/MBC/DNC, Classes 6–10)",
     "department": "Backward Classes Welfare Department, Government of Tamil Nadu",
     "official_link": "https://bcw.tn.gov.in/sub_page/8",
@@ -257,7 +290,15 @@
   {
     "id": "post-matric-school-bcmbcdnc",
     "category": "student",
-    "matchWhen": { "level": ["School"], "community": ["MBC / DNC", "BC"] },
+    "matchWhen": {
+      "level": [
+        "School"
+      ],
+      "community": [
+        "MBC / DNC",
+        "BC"
+      ]
+    },
     "name": "Post-Matric Scholarship (BC/MBC/DNC, Classes 11–12)",
     "department": "Backward Classes Welfare Department, Government of Tamil Nadu",
     "official_link": "https://bcw.tn.gov.in/sub_page/8",
@@ -280,7 +321,17 @@
   {
     "id": "post-matric-college-bcmbcdnc",
     "category": "student",
-    "matchWhen": { "level": ["Undergraduate", "Postgraduate", "Professional / Technical"], "community": ["MBC / DNC", "BC"] },
+    "matchWhen": {
+      "level": [
+        "Undergraduate",
+        "Postgraduate",
+        "Professional / Technical"
+      ],
+      "community": [
+        "MBC / DNC",
+        "BC"
+      ]
+    },
     "name": "Post-Matric Scholarship (BC/MBC/DNC, College Level)",
     "department": "Backward Classes Welfare Department, Government of Tamil Nadu",
     "official_link": "https://bcw.tn.gov.in/sub_page/8",
@@ -304,7 +355,16 @@
   {
     "id": "pmyasasvi-post-matric",
     "category": "student",
-    "matchWhen": { "level": ["Undergraduate", "Professional / Technical"], "community": ["MBC / DNC", "BC"] },
+    "matchWhen": {
+      "level": [
+        "Undergraduate",
+        "Professional / Technical"
+      ],
+      "community": [
+        "MBC / DNC",
+        "BC"
+      ]
+    },
     "name": "PM-YASASVI Post-Matric Scholarship",
     "department": "Central scheme (Ministry of Social Justice & Empowerment), implemented in Tamil Nadu via the Backward Classes Welfare Department",
     "official_link": "https://yet.nta.ac.in/",
@@ -327,7 +387,16 @@
   {
     "id": "iit-iim-nit-scholarship",
     "category": "student",
-    "matchWhen": { "level": ["Undergraduate", "Postgraduate"], "community": ["MBC / DNC", "BC"] },
+    "matchWhen": {
+      "level": [
+        "Undergraduate",
+        "Postgraduate"
+      ],
+      "community": [
+        "MBC / DNC",
+        "BC"
+      ]
+    },
     "name": "Scholarship for BC/MBC/DNC Students at IIT/IIM/NIT/Central Universities",
     "department": "Backward Classes Welfare Department, Government of Tamil Nadu",
     "official_link": "https://bcw.tn.gov.in/sub_page/8",
@@ -350,7 +419,11 @@
   {
     "id": "scholarship-children-of-disabled-parents",
     "category": "student",
-    "matchWhen": { "disability": ["A parent of mine has a certified disability"] },
+    "matchWhen": {
+      "disability": [
+        "A parent of mine has a certified disability"
+      ]
+    },
     "name": "Scholarship for Sons/Daughters of Differently Abled Persons",
     "department": "Department of Welfare of Differently Abled Persons, Government of Tamil Nadu",
     "official_link": "https://madurai.nic.in/differently-abled-welfare/",
@@ -373,5 +446,114 @@
     "fee": "None",
     "processing_time": "Funds transfer annually to the student's joint account after approval",
     "helpline": "Your District Differently Abled Welfare Officer"
+  },
+  {
+    "id": "coconut-palm-insurance-scheme",
+    "category": "farmer",
+    "matchWhen": {
+      "farmType": [
+        "Coconut, arecanut & other tree/plantation crops"
+      ]
+    },
+    "name": "Coconut Palm Insurance Scheme (CPIS)",
+    "department": "Coconut Development Board, Ministry of Agriculture & Farmers Welfare (Government of India), with State Government premium support",
+    "official_link": "https://coconutboard.gov.in/scheme.aspx",
+    "introduced": "Run by the Coconut Development Board (established 12 January 1981). The exact year CPIS itself was launched could not be independently confirmed from the sources checked — treat it as an established, long-running CDB scheme rather than a new one.",
+    "status": "Active",
+    "summary": "Low-cost insurance for your coconut or arecanut palms against storms, drought, pests, fire, earthquake, tsunami and landslide damage — you pay only a small fraction of the premium.",
+    "about": "Insures individual coconut palms (a minimum of 5 healthy, nut-bearing palms in one contiguous plot) against major natural and calamity-related risks. Premiums are heavily subsidised: the Coconut Development Board covers 50%, the State Government covers 25%, leaving the grower to pay the remaining 25% (or as little as 10% where the state adds a higher share).",
+    "eligibility_text": "You need a minimum of 5 healthy, nut-bearing palms in a contiguous area. Dwarf/hybrid palm varieties must be aged 4–60 years; tall palm varieties 7–60 years. Partial insurance of a plantation (insuring only some palms in one contiguous block) is not allowed — the full eligible block must be covered.",
+    "documents_required": [
+      "Proof of land ownership or cultivation rights",
+      "Palm count and age declaration for the plot",
+      "Aadhaar card",
+      "Bank account passbook (for premium payment / any claim payout)"
+    ],
+    "how_to_apply": "Enrol through the Coconut Development Board's regional office, the State Horticulture/Agriculture Department, or the implementing insurance agency, generally by 31 March each year (later enrolment is possible, with coverage starting from the 1st of the following month). Contact your nearest CDB regional office or Horticulture Department office to confirm the current enrolment window and implementing agency in your district.",
+    "fee": "₹9 per palm/year (ages 4–15, sum insured ₹900) or ₹14 per palm/year (ages 16–60, sum insured ₹1,750) — and that's already after the 50% CDB + 25% state subsidy, so this is roughly your actual out-of-pocket share, not the full premium.",
+    "processing_time": "Coverage begins on the 1st of the month following successful enrolment and premium payment",
+    "helpline": "Nearest Coconut Development Board regional office, or your district's Horticulture/Agriculture Department office"
+  },
+  {
+    "id": "rashtriya-gokul-mission-ai",
+    "category": "farmer",
+    "matchWhen": {
+      "farmType": [
+        "Livestock & dairy (cows, goats, poultry)"
+      ]
+    },
+    "name": "Rashtriya Gokul Mission — Free Artificial Insemination for Cattle",
+    "department": "Department of Animal Husbandry, Government of Tamil Nadu, with Tamil Nadu Cooperative Milk Producers' Federation and TANUVAS, under the central Rashtriya Gokul Mission",
+    "official_link": "https://www.tnlda.tn.gov.in/rashtriya_gokul_mission",
+    "introduced": "Rashtriya Gokul Mission was launched nationally by the Government of India in December 2014 to improve indigenous cattle breeds; Tamil Nadu's own district-wise rollout date under TNLDA is not independently confirmed.",
+    "status": "Active",
+    "summary": "Free doorstep artificial insemination for your cattle, with an optional sex-sorted semen option that gives an 85%+ chance of a female calf — useful if you're building up a dairy herd.",
+    "about": "Provides free bovine artificial insemination (AI) at the farmer's doorstep, using high genetic merit bull semen to improve milk yield and breed quality over time. A paid add-on option (gender-sorted semen) skews the odds heavily toward female calves, which is valuable for dairy farmers who specifically want more milking animals rather than males.",
+    "eligibility_text": "Available to cattle-owning farmers in most Tamil Nadu districts, including Chennai, Coimbatore, Cuddalore, Erode, Kanchipuram, Kanyakumari, Krishnagiri, Madurai, Nagapattinam, Namakkal, Perambalur, Pudukkottai, Ramanathapuram, Ranipet, Salem, Sivagangai, Thanjavur, The Nilgiris, Thiruvallur, Thiruvannamalai, Tiruchirapalli, Tirunelveli, Thirupathur, Thoothukudi, Vellore, Villupuram and Virudhunagar. Check with your local AI centre to confirm current coverage.",
+    "documents_required": [
+      "No specific document list was published on the official source checked — contact your local AI centre or Village Animal Husbandry Assistant with basic cattle ownership details to enrol"
+    ],
+    "how_to_apply": "Contact your nearest Artificial Insemination (AI) centre, Village Animal Husbandry Assistant, or veterinary hospital to request the service for your cattle.",
+    "fee": "Standard AI service is free. The optional sex-sorted semen add-on costs ₹175 for the first insemination and ₹150 for a second attempt if needed.",
+    "processing_time": "Service is typically provided on request at the farmer's location",
+    "helpline": "Local Animal Husbandry / Veterinary office, or the Tamil Nadu Livestock Development Agency (TNLDA)"
+  },
+  {
+    "id": "savings-cum-relief-fishermen",
+    "category": "farmer",
+    "matchWhen": {
+      "farmType": [
+        "Fisheries / fish & prawn farming"
+      ]
+    },
+    "name": "Saving-cum-Relief Scheme for Marine Fishermen (Fishing Ban Period)",
+    "department": "Fisheries Department, Government of Tamil Nadu, under the central National Scheme of Welfare of Fishermen",
+    "official_link": "https://www.fisheries.tn.gov.in/WelfareSchemes",
+    "introduced": "Implemented in Tamil Nadu as part of the central National Scheme of Welfare of Fishermen; the state's per-family relief amount was raised from ₹2,000 to ₹5,000 in 2017 — exact original launch year in Tamil Nadu not independently confirmed.",
+    "status": "Active",
+    "summary": "₹5,000 in direct financial relief for marine fishermen crew/laborer families during the annual fishing ban period, when boats can't go out and there's no catch income.",
+    "about": "Tamil Nadu enforces an annual fishing ban of about 61 days on the East Coast (roughly mid-April to end-May) to let fish stocks recover. This scheme gives registered marine fishermen — especially crew and laborers who have no other steady income during the ban — a direct cash relief payment, transferred straight to their bank account.",
+    "eligibility_text": "You should be a registered marine fisherman working as crew or a laborer on a fishing boat, without another steady source of income during the ban period. Contribution to the savings component (where applicable) and cooperative society membership can factor into eligibility — confirm current terms with your local Fisheries Department office.",
+    "documents_required": [
+      "Fisherman registration / identity card",
+      "Bank account passbook (Aadhaar-linked, for NEFT transfer)",
+      "Proof of engagement as boat crew/labor (from your cooperative society or boat owner)"
+    ],
+    "how_to_apply": "Register with your local Fisheries Department office or fishermen's cooperative society ahead of the ban period; the relief amount is credited directly to your bank account via NEFT after enrolment is verified.",
+    "fee": "None to receive the relief; a savings contribution may apply depending on the specific scheme component",
+    "processing_time": "Typically disbursed during or shortly after the fishing ban period, once registration is verified",
+    "helpline": "Local Assistant Director of Fisheries office"
+  },
+  {
+    "id": "fisherfolk-group-accident-insurance",
+    "category": "farmer",
+    "matchWhen": {
+      "farmType": [
+        "Fisheries / fish & prawn farming"
+      ]
+    },
+    "name": "Group Accident Insurance Scheme for Fisherfolk",
+    "department": "Fisheries Department, Government of Tamil Nadu, under the centrally-sponsored National Scheme of Welfare of Fishermen",
+    "official_link": "https://www.fisheries.tn.gov.in/WelfareSchemes",
+    "introduced": "Run as part of the central, centrally-sponsored National Scheme of Welfare of Fishermen; exact Tamil Nadu launch date not independently confirmed.",
+    "status": "Active",
+    "summary": "Free accident insurance for all registered fisherfolk — up to ₹2,00,000 if a fisherman dies, goes missing, or is permanently disabled at sea, with no premium to pay.",
+    "about": "Covers marine and inland fisherfolk against accidental death, disappearance at sea, and disability. Because it's centrally sponsored, the fisherman doesn't pay any premium — the cost is borne by the government.",
+    "eligibility_text": "Available to registered fisherfolk (marine and inland). No premium is collected from the fisherman under this centrally-sponsored scheme.",
+    "benefit_highlights": [
+      "Death, missing-at-sea, or permanent disability: ₹2,00,000",
+      "Partial disability: ₹1,00,000, plus ₹10,000 towards hospitalisation costs",
+      "No premium payable by the fisherman"
+    ],
+    "documents_required": [
+      "Fisherman registration / identity card",
+      "Nominee details",
+      "Bank account passbook",
+      "For a claim: death/disability certificate and supporting medical or police records (exact claim document list not independently confirmed — check with your local Fisheries office)"
+    ],
+    "how_to_apply": "Enrolment happens automatically when you register as a fisherman with the Fisheries Department or your local fishermen's cooperative society — there's no separate application for the insurance itself. Claims are filed through your local Assistant Director of Fisheries office.",
+    "fee": "None — premium is fully paid by the government",
+    "processing_time": "Not specified by source — claims are handled through the local Fisheries office",
+    "helpline": "Local Assistant Director of Fisheries office"
   }
 ]
