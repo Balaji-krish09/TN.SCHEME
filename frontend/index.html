@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TN.Scheme — Find the schemes you actually qualify for</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HFZL16LZ5T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HFZL16LZ5T');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -688,6 +696,10 @@
       wizard.style.setProperty('--card-accent', accent);
       wizard.style.setProperty('--card-tint', tint);
 
+      if (typeof gtag === 'function') {
+        gtag('event', 'select_category', { category: card.dataset.category });
+      }
+
       openWizard(card.dataset.category);
     });
   });
@@ -745,6 +757,14 @@
       .join('');
     const hasData = HAS_SCHEME_DATA[wizardState.category];
     const matches = hasData ? findMatches(wizardState.category, wizardState.answers) : [];
+
+    if (typeof gtag === 'function') {
+      gtag('event', 'wizard_complete', {
+        category: wizardState.category,
+        matched_count: matches.length,
+        has_scheme_data: hasData
+      });
+    }
 
     const infoIcon = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>';
     const checkIcon = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
